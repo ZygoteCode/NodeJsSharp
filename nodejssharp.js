@@ -1,0 +1,99 @@
+var currentSessionId = "";
+var nodeJsSharpDirectory = "C:\\nodejs_sharp";
+const fs = require('fs')
+
+function writeMessage(content)
+{
+    if (!fs.existsSync(nodeJsSharpDirectory))
+    {
+        fs.mkdirSync(nodeJsSharpDirectory)
+    }
+
+    for (var i = 1; i <= 100; i++)
+    {
+        try
+        {
+            if (!fs.existsSync(nodeJsSharpDirectory + "\\nodejs_sharp_session_" + currentSessionId + "_message_" + i + "_from_js_to_csharp"))
+            {
+                fs.writeFileSync(nodeJsSharpDirectory + "\\nodejs_sharp_session_" + currentSessionId + "_message_" + i + "_from_js_to_csharp", content);
+                break;
+            }
+        }
+        catch (err)
+        {
+
+        }
+    }
+}
+
+function readMessage()
+{
+    if (!fs.existsSync(nodeJsSharpDirectory))
+    {
+        fs.mkdirSync(nodeJsSharpDirectory)
+        return "";
+    }
+
+    while (true)
+    {
+        for (var i = 1; i <= 100; i++)
+        {
+            try
+            {
+                if (fs.existsSync(nodeJsSharpDirectory + "\\nodejs_sharp_session_" + currentSessionId + "_message_" + i + "_from_csharp_to_js"))
+                {
+                    var content = fs.readFileSync(nodeJsSharpDirectory + "\\nodejs_sharp_session_" + currentSessionId + "_message_" + i + "_from_csharp_to_js").toString();
+                    fs.unlinkSync(nodeJsSharpDirectory + "\\nodejs_sharp_session_" + currentSessionId + "_message_" + i + "_from_csharp_to_js");
+                    return content;
+                }
+            }
+            catch (err)
+            {
+
+            }
+        }
+    }
+}
+
+function clearSession()
+{
+    if (!fs.existsSync(nodeJsSharpDirectory))
+    {
+        fs.mkdirSync(nodeJsSharpDirectory)
+    }
+
+    for (var i = 1; i <= 100; i++)
+    {
+		try
+        {
+            if (fs.existsSync(nodeJsSharpDirectory + "\\nodejs_sharp_session_" + currentSessionId + "_message_" + i + "_from_csharp_to_js"))
+            {
+                fs.unlinkSync(nodeJsSharpDirectory + "\\nodejs_sharp_session_" + currentSessionId + "_message_" + i + "_from_csharp_to_js");
+            }
+        }
+        catch (err)
+        {
+
+        }
+		
+        try
+        {
+            if (fs.existsSync(nodeJsSharpDirectory + "\\nodejs_sharp_session_" + currentSessionId + "_message_" + i + "_from_js_to_csharp"))
+            {
+                fs.unlinkSync(nodeJsSharpDirectory + "\\nodejs_sharp_session_" + currentSessionId + "_message_" + i + "_from_js_to_csharp");
+            }
+        }
+        catch (err)
+        {
+
+        }
+    }
+}
+
+currentSessionId = process.argv[2];
+clearSession();
+
+while (true)
+{
+    console.log(readMessage());
+}
