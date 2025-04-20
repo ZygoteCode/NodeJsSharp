@@ -1,0 +1,11 @@
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\bin\Release\NodeJsSharp Test.exe.config
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\bin\Release\NodeJsSharp Test.exe
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\bin\Release\NodeJsSharp Test.pdb
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\bin\Release\NodeJsSharp.dll
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\bin\Release\NodeJsSharp.pdb
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\obj\Release\NodeJsSharp Test.csproj.AssemblyReference.cache
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\obj\Release\NodeJsSharp Test.csproj.SuggestedBindingRedirects.cache
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\obj\Release\NodeJsSharp Test.csproj.CoreCompileInputs.cache
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\obj\Release\NodeJsSharp Test.csproj.CopyComplete
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\obj\Release\NodeJsSharp Test.exe
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp Test\obj\Release\NodeJsSharp Test.pdb

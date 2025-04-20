@@ -1,0 +1,6 @@
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp\bin\Release\NodeJsSharp.dll
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp\bin\Release\NodeJsSharp.pdb
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp\obj\Release\NodeJsSharp.csproj.AssemblyReference.cache
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp\obj\Release\NodeJsSharp.csproj.CoreCompileInputs.cache
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp\obj\Release\NodeJsSharp.dll
+C:\Users\ZygoteCode\Desktop\NodeJsSharp\NodeJsSharp\obj\Release\NodeJsSharp.pdb
